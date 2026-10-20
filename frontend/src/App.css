@@ -1,6 +1,33 @@
+:root {
+  --rosa-fondo: #fff7fa;
+  --rosa-claro: #fce8ef;
+  --rosa-medio: #f4cbd9;
+  --rosa-texto: #603748;
+
+  --bs-body-bg: var(--rosa-fondo);
+  --bs-body-color: var(--rosa-texto);
+  --bs-body-color-rgb: 96, 55, 72;
+  --bs-primary-rgb: 189, 93, 131;
+  --bs-success-rgb: 183, 104, 138;
+  --bs-info-rgb: 194, 120, 151;
+  --bs-danger-rgb: 190, 83, 113;
+  --bs-border-color: #efd0dc;
+  --bs-success-bg-subtle: #fbeaf1;
+  --bs-success-border-subtle: #edc2d2;
+  --bs-success-text-emphasis: #754057;
+  --bs-danger-bg-subtle: #fff0f3;
+  --bs-danger-border-subtle: #f0c2ce;
+  --bs-danger-text-emphasis: #80394e;
+}
+
+body {
+  background-color: var(--rosa-fondo);
+  color: var(--rosa-texto);
+}
+
 .titulo {
+  color: #82445e;
   font-weight: 700;
-  color: #1f3a5f;
 }
 
 .health-section {
@@ -9,27 +36,52 @@
 
 .health-box {
   padding: 1.25rem 1.5rem;
+  border: 1px solid var(--rosa-medio);
+  border-left: 6px solid #d8a6b9;
   border-radius: 12px;
-  border-left: 6px solid #999;
-  background: #f3f4f6;
+  background: #fffafd;
 }
 
 .health-box.ok {
-  background: #e6f6ec;
-  border-left-color: #1e9e4a;
+  border-left-color: #bd7895;
+  background: #fcecf2;
 }
 
 .health-box.error {
-  background: #fdeaea;
-  border-left-color: #d33;
+  border-left-color: #c65e7b;
+  background: #fff0f3;
 }
 
 .health-title {
   margin: 0 0 0.25rem;
+  color: #82445e;
   font-weight: 600;
 }
 
 .health-text {
   margin: 0;
   font-size: 1.05rem;
+}
+
+.integrante-card {
+  border-color: var(--rosa-medio);
+  background: #fffafd;
+}
+
+.integrante-card .card-header {
+  border-bottom-color: var(--rosa-medio);
+  background: var(--rosa-claro);
+  color: #754057;
+}
+
+.integrante-card .list-group-item {
+  border-color: #f2dce5;
+  background: transparent;
+  color: var(--rosa-texto);
+}
+
+.badge-ciudad,
+.badge-proyectos {
+  background-color: #f7dce6;
+  color: #713b53;
 }

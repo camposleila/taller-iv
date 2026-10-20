@@ -47,18 +47,25 @@ export default function InfoIntegrantes() {
 
       <Row>
         {info.integrantes.map((p) => (
-          <Col md="6" lg="4" key={p.nombre} className="mb-3">
-            <Card className="shadow-sm h-100">
-              <CardHeader className="fw-bold">{p.nombre}</CardHeader>
+          <Col md="6" lg="4" key={p.carnet} className="mb-3">
+            <Card className="integrante-card shadow-sm h-100">
+              <CardHeader className="fw-bold">
+                Carnet: {p.carnet}
+              </CardHeader>
               <CardBody>
                 <CardTitle tag="h5">{p.carrera}</CardTitle>
                 <ListGroup flush>
                   <ListGroupItem>
-                    Edad: <Badge color="info">{p.edad} años</Badge>
+                    Ciudad de origen:{" "}
+                    <Badge color="info" className="badge-ciudad">
+                      {p.ciudadOrigen}
+                    </Badge>
                   </ListGroupItem>
                   <ListGroupItem>
-                    Materias aprobadas:{" "}
-                    <Badge color="primary">{p.materiasAprobadas}</Badge>
+                    Proyectos realizados:{" "}
+                    <Badge color="primary" className="badge-proyectos">
+                      {p.proyectosRealizados}
+                    </Badge>
                   </ListGroupItem>
                 </ListGroup>
               </CardBody>
