@@ -1,0 +1,35 @@
+.titulo {
+  font-weight: 700;
+  color: #1f3a5f;
+}
+
+.health-section {
+  margin-bottom: 2rem;
+}
+
+.health-box {
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  border-left: 6px solid #999;
+  background: #f3f4f6;
+}
+
+.health-box.ok {
+  background: #e6f6ec;
+  border-left-color: #1e9e4a;
+}
+
+.health-box.error {
+  background: #fdeaea;
+  border-left-color: #d33;
+}
+
+.health-title {
+  margin: 0 0 0.25rem;
+  font-weight: 600;
+}
+
+.health-text {
+  margin: 0;
+  font-size: 1.05rem;
+}
